@@ -9,6 +9,8 @@ import {
 } from "@reach/router"
 
 import Home from './Home';
+import Recipes from './Recipes';
+import About from './About';
 import Navbar from './Navbar/Navbar';
 
 
@@ -17,7 +19,11 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
-    <Home />
+    <Router>
+      <Home path="/" />
+      <About path="/about" />
+      <Recipes path="/recipes" />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
