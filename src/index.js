@@ -2,7 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import Page from './Page';
+import {
+  Router,
+  Link,
+  navigate
+} from "@reach/router"
+
+import Home from './Home';
 import Navbar from './Navbar/Navbar';
 
 
@@ -11,7 +17,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
-    <Page />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
