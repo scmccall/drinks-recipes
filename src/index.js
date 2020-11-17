@@ -12,6 +12,7 @@ import Home from './Home';
 import Recipes from './Recipes';
 import About from './About';
 import Navbar from './Navbar/Navbar';
+import AddRecipe from './AddRecipe'
 
 
 import reportWebVitals from './reportWebVitals';
@@ -23,6 +24,7 @@ ReactDOM.render(
       <Home path="/" />
       <About path="/about" />
       <Recipes path="/recipes" />
+      <AddRecipe path="add" />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
